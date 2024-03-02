@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet">
+    <title>Bmi kalkulator</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1> DEN NORSKE BMI KALKULATOREN</h1>
+      </div>
+    </header>
+    <main class="center-form">
+        <h2>Sjekk din BMI</h2>
+        <form class="form-cont">
+            <div id="vektInput">
+                <p>Fyll inn din vekt her (KG)</p>
+                <input type="number" name="a" id="vekt" pattern="[0-9]*">
+            </div>
+            <div id="høydeInput">
+                <p>Fyll inn din høyde her (CM)</p>
+                <input type="number" name="b" id="høyde" pattern="[0-9]*">
+            </div>
+            <button type="button" class="btn" onclick="kalkuler()">Kalkuler din BMI</button>
+        </form>
+        <div class="results-cont">
+        <div id="results"><h2>Ditt BMI resultat kommer her:</h2>
+            <script src="./main.js"></script>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div>
+
+        </div>
+    </footer>
+  </body>
+</html>
